@@ -1,0 +1,21 @@
+.card {
+  background-color: var(--light-gray);
+  width: 32%;
+  position: relative;
+  border: 1px solid var(--gray);
+}
+.paramPos {
+  color: var(--light-black);
+  font-weight: 500;
+  font-size: var(--subtitle-size);
+}
+.defaultText {
+  color: black;
+  font-weight: 500;
+  font-size: 12px;
+}
+.parameter {
+  font-size: var(--input-size);
+  color: var(--light-black);
+  font-weight: 400;
+}

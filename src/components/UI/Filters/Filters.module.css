@@ -1,0 +1,12 @@
+.container {
+  /* margin-left: var(--xl-gap); */
+  width: 100%;
+  background-color: var(--light-gray);
+  border-radius: 12px;
+  overflow-y: scroll;
+  height: 600px;
+}
+.container h5 {
+  font-weight: bold;
+  font-size: var(--input-size);
+}

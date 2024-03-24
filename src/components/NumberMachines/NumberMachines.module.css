@@ -1,0 +1,19 @@
+.title {
+  font-size: var(--subtitle-size);
+  font-weight: 500;
+  color: var(--light-black);
+}
+.machineNumbers {
+  font-size: var(--supertitle-size);
+  color: var(--blue);
+  font-weight: 500;
+  margin: auto 0;
+}
+.machine {
+  font-size: var(--button-size);
+  color: var(--dark-gray);
+  font-weight: 500;
+}
+.machine span {
+  color: black;
+}

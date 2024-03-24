@@ -1,0 +1,21 @@
+.title {
+  font-size: var(--subtitle-size);
+  line-height: 1;
+  font-weight: 500;
+  color: var(--light-black);
+}
+.date {
+  color: var(--gray);
+  font-size: 12px;
+  line-height: 1;
+}
+.instructions {
+  font-size: 14px;
+  color: var(--dark-gray);
+  line-height: 2;
+}
+.warning {
+  font-size: var(--input-size);
+  color: var(--light-black);
+  cursor: pointer;
+}

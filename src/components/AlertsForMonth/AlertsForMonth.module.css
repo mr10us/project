@@ -1,0 +1,31 @@
+.title {
+  font-size: var(--subtitle-size);
+  line-height: 1;
+  font-weight: 500;
+  color: var(--light-black);
+}
+.date {
+  color: var(--gray);
+  font-size: 12px;
+  line-height: 1;
+}
+.alertsNumbers {
+  font-size: var(--supertitle-size);
+  color: var(--blue);
+  font-weight: 500;
+  line-height: 1;
+}
+.padTitle {
+  font-size: var(--button-size);
+  color: var(--dark-gray);
+}
+.padSubtitle {
+  font-weight: 500;
+  font-size: var(--subtitle-size);
+  color: black;
+}
+.evalCount {
+  font-size: var(--button-size);
+  color: black;
+  font-weight: 500;
+}

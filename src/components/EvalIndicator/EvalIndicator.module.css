@@ -1,0 +1,32 @@
+.indicator {
+  display: block;
+  background-color: transparent;
+  padding: 6px 12px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 50px;
+  color: black;
+
+  transition: all 0.3s ease-out;
+}
+.indicator_good {
+  background-color: #e7f9f5;
+  border-color: #b5d0c9;
+  color: #21715e;
+}
+.indicator_suspicious {
+  background-color: #fefaf3;
+  border-color: #ffe7b5;
+  color: #f1ca76;
+}
+.indicator_warning {
+  background-color: #fff5e0;
+  border-color: #fbc756;
+  color: #fbc756;
+}
+.indicator_critical {
+  background-color: #ffe9eb;
+  border-color: #fd4e5d;
+  color: #fd4e5d;
+}

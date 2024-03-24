@@ -1,0 +1,26 @@
+.indicator {
+  background-color: transparent;
+  color: black;
+
+  transition: all 0.3s ease-out;
+}
+.indicator_good {
+  background-color: #e7f9f5 !important;
+  border-color: #b5d0c9 !important;
+  color: #21715e !important;
+}
+.indicator_suspicious {
+  background-color: #fefaf3 !important;
+  border-color: #ffe7b5 !important;
+  color: #f1ca76 !important;
+}
+.indicator_warning {
+  background-color: #fff5e0 !important;
+  border-color: #fbc756 !important;
+  color: #fbc756 !important;
+}
+.indicator_critical {
+  background-color: #ffe9eb !important;
+  border-color: #fd4e5d !important;
+  color: #fd4e5d !important;
+}

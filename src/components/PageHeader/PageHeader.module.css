@@ -1,0 +1,25 @@
+.linkContainer {
+  color: var(--blue);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.linkContainer:hover .link {
+  color: #69b1ff;
+}
+.linkContainer p {
+  transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.linkContainer:hover p {
+  color: #69b1ff;
+}
+.linkContainer div span {
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.linkContainer:hover div span {
+  color: #69b1ff !important;
+}
+.link {
+  color: inherit;
+  font-weight: bold;
+}

@@ -1,0 +1,5 @@
+.container {
+  padding: 12px;
+  font-size: var(--input-size);
+  border-radius: 8px;
+}

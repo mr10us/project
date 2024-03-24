@@ -1,0 +1,11 @@
+.title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: var(--title-size);
+}
+.descr {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: var(--text-size);
+  color: #787878;
+  text-align: center;
+}

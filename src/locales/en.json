@@ -1,0 +1,613 @@
+{
+  "settings": {
+    "name": "Settings",
+    "machines": {
+      "machine_models": {
+        "title": "Machine Models",
+        "columns": {
+          "brand": "Brand",
+          "name": "Name",
+          "type": "Type",
+          "parent": "Parent Model"
+        }
+      },
+      "create": {
+        "model": { "title": "Create Model", "details": "Details" },
+        "parent": {
+          "title": "Create based on: {{parent}}",
+          "details": "Details"
+        }
+      },
+      "machine_types": {
+        "title": "Machine Types"
+      }
+    },
+    "cf": {
+      "title": "Cutting fluid models",
+      "columns": {
+        "brand": "Brand",
+        "name": "Name",
+        "parent": "Parent Model"
+      },
+      "add": {
+        "title": "Create Cutting Fluid Model",
+        "details": "Details"
+      },
+      "edit": {
+        "title": "Edit Cutting Fluid Model",
+        "details": "Details"
+      }
+    },
+    "mixers": {
+      "title": "Mixer models",
+      "columns": {
+        "brand": "Brand",
+        "name": "Name",
+        "parent": "Parent Model"
+      },
+      "add": {
+        "title": "Create Mixer Model",
+        "details": "Details"
+      },
+      "edit": {
+        "title": "Edit Mixer Model",
+        "details": "Details"
+      }
+    },
+    "parameters": {
+      "title": "Parameters",
+      "columns": {
+        "identifier": "Identifier",
+        "name": "Name",
+        "unit": "Unit",
+        "type": "Type"
+      },
+      "add": {
+        "title": "Add Parameter",
+        "locales": "Fields that need to be translated"
+      },
+      "edit": {
+        "title": "Edit Parameter: {{parameter}}",
+        "locales": "Fields that need to be translated"
+      }
+    },
+    "brands": {
+      "title": "Brands"
+    }
+  },
+  "customers": {
+    "name": "Customers",
+    "title": "Customers",
+    "add_customer": "Add Customer",
+    "add_customer_title": "Add Customer"
+  },
+  "users": {
+    "name": "Users",
+    "title": "Users",
+    "add_user": "Add User",
+    "columns": {
+      "name": "Name",
+      "email": "Email",
+      "phone_number": "Phone Number",
+      "level": "Level"
+    }
+  },
+  "customer": {
+    "dashboard": {
+      "name": "Dashboard"
+    },
+    "settings": {
+      "name": "Settings",
+      "edit": {
+        "cf": { "title": "Edit Cutting Fluid" },
+        "mixer": { "title": "Edit Mixer" }
+      }
+    },
+    "machines": {
+      "name": "Machines",
+      "rearange": "Rearange machines",
+      "columns": {
+        "customer_id": "Customer ID",
+        "brand": "Brand",
+        "model": "Model"
+      },
+      "machine": {
+        "title": "Machine",
+        "edit": {
+          "title": "Edit machine with ID: {{machineID}}",
+          "model": "Model: {{modelName}}"
+        }
+      }
+    },
+    "users": {
+      "title": "Users",
+      "user": {
+        "add": {
+          "title": "Add User"
+        },
+        "edit": {
+          "title": "Edit User"
+        }
+      },
+      "columns": {
+        "name": "Name",
+        "email": "Email",
+        "phone_number": "Phone Number",
+        "level": "Level"
+      }
+    },
+    "packets": {
+      "title": "Packets",
+      "columns": {
+        "date": "Date",
+        "packet_level": "Packet Level",
+        "measures": "Measures",
+        "problem_machines": "Problem Machines",
+        "customer_alert": "Customer Alert",
+        "preview_pdf": "Preview",
+        "export_pdf": "Export To PDF"
+      },
+      "measures": { "+contain": "Contain", "-contain": "-" },
+      "create_packet": { "title": "Create packet", "date": "Date: {{date}}" },
+      "packet": {
+        "title": "Packet",
+        "author": "Author: {{name}}",
+        "date": "Date: {{date}}",
+        "switch": {
+          "measurements": "Measurements",
+          "machine_alerts": "Machine Alerts",
+          "customer_alert": "Customer Alert"
+        },
+        "measurements": {
+          "columns": {
+            "ordinal_number": "#",
+            "internal_number": "ID",
+            "model": "Model"
+          },
+          "show_static": "Static Parameters"
+        },
+        "statistics": {
+          "title": "Statistics",
+          "columns": {
+            "parameter": "Parameter",
+            "average": "Average",
+            "median": "Median",
+            "stdv": "Standard Deviation",
+            "cv": "Coefficient of Variation"
+          }
+        },
+        "no_measurements": "No Measurements"
+      }
+    },
+    "alerts": {
+      "title": "Alerts",
+      "columns": {
+        "date": "Date",
+        "level": "Level",
+        "relation": "Relation",
+        "title": "Title",
+        "description": "Description"
+      },
+      "alert": {
+        "date": { "0": "Created in ", "1": "the packet ", "2": "at {{date}}" },
+        "related": "Related to: {{machine}}",
+        "level": "Level",
+        "title": "Alert",
+        "description": "Content",
+        "media": "Media Files"
+      }
+    },
+    "measurements": {
+      "all": {
+        "title": "All Measurements",
+        "columns": { "id": "ID", "model": "Model", "date": "Date" }
+      },
+      "daily": {
+        "title": "Daily Measurements",
+        "columns": { "id": "ID", "model": "Model", "date": "Date" }
+      },
+      "for_machine": {
+        "select": {
+          "machine": "Select a machine: ",
+          "period": "Select a period: "
+        },
+        "title": "Measurement of a Machine",
+        "columns": { "date": "Date" }
+      }
+    },
+    "edit_customer_mixer": { "name": "Edit Customer Mixer" },
+    "edit_customer_cf": { "name": "Edit Customer Cutting Fluid" },
+    "edit_customer_machine_cf": {
+      "name": "Edit machine cutting fluid with ID {{machineID}}"
+    }
+  },
+  "widgets": {
+    "last_packet": {
+      "name": "Last Packet",
+      "+measurements": "Contains measurements",
+      "-measurements": "Does not contain measurements",
+      "+alerts": "Contains customer alerts",
+      "-alerts": "Does not contain customer alerts",
+      "no_alerts": "No Alerts",
+      "no_text": "No text",
+      "show_more": "Show more...",
+      "problem_machines": "Problem Machines ({{count}})"
+    },
+    "number_of_machines": {
+      "name": "Number of Machines"
+    },
+    "alerts_for_month": {
+      "name": "Alerts for This Month",
+      "customer": "Customer",
+      "machines": "Machines",
+      "most_problematic": "Most problematic machine",
+      "no_machine": "No machine"
+    },
+    "abstract": {
+      "content": "Parameters that do not refer to any existing entities",
+      "name": "Abstact Parameters"
+    },
+    "valid_params": {
+      "title": "Available Parameters List",
+      "tooltip": "All Parameters"
+    },
+    "packet_level": {
+      "title": "Package level, which defines the list of recipients"
+    }
+  },
+  "layouts": {
+    "customer": {
+      "dashboard": "Dasboard",
+      "settings": "Settings",
+      "users": "Users",
+      "machines": "Machines",
+      "packets": "Packets",
+      "reports": "Reports",
+      "alerts": "Alerts",
+      "measurements": "Measurements",
+      "all_measurements": "All",
+      "daily_measurements": "Daily",
+      "machine_measurements": "For Machine"
+    },
+    "settings": {
+      "settings": "Settings",
+      "customers": "Customers",
+      "users": "Users",
+
+      "machines": "Machines",
+      "cf": "Cutting fluid",
+      "mixers": "Mixers",
+      "parameters": "Parameters",
+      "brands": "Brands"
+    }
+  },
+  "parameters": {
+    "modal": { "name": "Choose Parameter" },
+    "collapse": {
+      "formulas": {
+        "name": "Formulas",
+        "default_formula": "This is a default formula",
+        "columns": { "condition": "Condition", "formula": "Formula" }
+      },
+      "evaluations": {
+        "name": "Evaluations",
+        "columns": {
+          "type": "Type",
+          "min": "Minimum",
+          "max": "Maximum",
+          "+min": "Include(min)",
+          "+max": "Include(max)"
+        }
+      }
+    },
+    "static": {
+      "name": "Static Parameters"
+    },
+    "measurable": {
+      "name": "Measurable Parameers"
+    },
+    "calculable": { "name": "Calculable Parameters" },
+    "displayed": {
+      "name": "Displayed Parameters",
+      "title": "Parameter",
+      "in_statistics": "In statistics"
+    },
+    "abstract": { "name": "Abstact Parameters" }
+  },
+  "filter": {
+    "name": "Filter By",
+    "by": {
+      "order": "Order By",
+      "status": "Status",
+      "level": "Level",
+      "type": "Type",
+      "brand": "Brand",
+      "name": "Name",
+      "models": "Machine Models",
+      "date": "Date",
+      "packet_level": "Packet Level",
+      "measurements": "Measurements",
+      "machine": "Machine"
+    },
+    "options": {
+      "+name": "Name ↑",
+      "-name": "Name ↓",
+      "+level": "Level ↑",
+      "-level": "Level ↓",
+      "+type": "Type ↑",
+      "-type": "Type ↓",
+      "+brand": "Brand ↑",
+      "-brand": "Brand ↓",
+      "+number": "Number ↑",
+      "-number": "Number ↓",
+      "+customer": "Customer ID ↑",
+      "-customer": "Customer ID ↓",
+      "+model": "Model Name ↑",
+      "-model": "Model Name ↓",
+      "+date": "Date ↑",
+      "-date": "Date ↓",
+      "+notify_level": "Notify Level ↑",
+      "-notify_level": "Notify Level ↓",
+      "+packet_level": "Packet Level ↑",
+      "-packet_level": "Packet Level ↓",
+      "+contain": "Contain",
+      "-contain": "Does not contain",
+      "types": {
+        "machine": "Machine",
+        "mixer": "Mixer",
+        "cf": "Cutting fluid",
+        "abstract": "Abstract"
+      },
+      "active": "Active",
+      "inactive": "Inactive",
+      "all": "All"
+    }
+  },
+  "evaluations": {
+    "good": "Green",
+    "suspicious": "Yellow",
+    "warning": "Orange",
+    "critical": "Red",
+    "null": "Will not recieve anything",
+    "none": "None"
+  },
+  "roles": {
+    "admin": "Admin",
+    "operator": "Operator",
+    "guest": "Guest"
+  },
+  "statuses": {
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "buttons": {
+    "add": {
+      "default": "Add",
+      "parameter": "Add Parameter",
+      "formula": "Add formula with condition",
+      "machine": "Add Machine",
+      "user": "Add User",
+      "machine_alert": "Add Machine Alert",
+      "customer_alert": "Add Customer Alert",
+      "model": "Add Model",
+      "parent_model": "Add based on another",
+      "type": "Add Type",
+      "brand": "Brand"
+    },
+    "create": {
+      "default": "Create",
+      "packet": "Create Packet"
+    },
+    "save": "Save",
+    "save_password": "Save Password",
+    "send": "Send",
+    "edit": "Edit",
+    "remove": { "default": "Remove", "customer": "Remove Customer" },
+    "apply": "Apply",
+    "delete": "Delete",
+    "reset": "Reset",
+    "leave": "Leave",
+    "preview": "Show Preview",
+    "export_excel": "Export To Excel",
+    "export_pdf": "Export To PDF",
+    "next_tab": "Next Tab",
+    "prev_tab": "Previous Tab",
+    "upload": "Upload",
+    "back": "Go back",
+    "machine_types": "Machine Types",
+    "calculate": "Calculate"
+  },
+  "rules": {
+    "new": {
+      "name": "Please, enter a new name",
+      "username": "Please, enter a new username",
+      "email": "Please, enter a new email",
+      "password": "Please, enter a new password",
+      "role": "Please, choose a new role",
+      "mixer": "Please, choose a new mixer",
+      "status": "Please, choose a new status",
+      "parameter": "Please, choose a new parameter"
+    },
+    "valid": {
+      "name": "Please, enter a valid name",
+      "username": "Please, enter a valid username",
+      "email": "Please enter a valid email address",
+      "password": "Please, enter a valid password",
+      "role": "Please, enter a valid role",
+      "mixer": "Please, choose a valid mixer",
+      "status": "Please, choose a valid status",
+      "parameter": "Please, choose a valid parameter",
+      "customer_id": "Customer id already exists",
+      "confirm_new_pwd": "Passwords do not match"
+    },
+    "name": "Please, enter name",
+    "username": "Please, enter username",
+    "email": "Please, enter email",
+    "password": "Please, enter password",
+    "role": "Please, choose role",
+    "mixer": "Please, choose mixer",
+    "status": "Please, choose status",
+    "parameter": "Please, choose parameter",
+    "recommendation_done": "Fill the recommendation first",
+    "formula": "Please fill the formula for {{parameter}}",
+    "condition": "Please fill the condition for {{parameter}}",
+    "customer_id": "Please, enter customer ID",
+    "model": "Please, choose model",
+    "machine": "Please, choose machine",
+    "title": "Please, enter title",
+    "description": "Please, enter description",
+    "level": "Please, enter level",
+    "media": "Please, choose media files",
+    "machine_model": "Please, choose machine model",
+    "cf": "Please, choose cutting fluid",
+    "old_pwd": "Please, enter old password",
+    "new_pwd": "Please, enter new password",
+    "confirm_new_pwd": "Please, confirm new password"
+  },
+  "placeholders": {
+    "name": "Enter name...",
+    "first_name": "Enter first name...",
+    "last_name": "Enter last name...",
+    "notification_level": "Choose level...",
+    "phone_number": "Enter phone number...",
+    "username": "Enter username...",
+    "password": "Enter password...",
+    "email": "Enter email...",
+    "evaluation": "Enter evaluation...",
+    "formula": "Enter formula...",
+    "condition": "Enter condition...",
+    "customer_id": "Enter customer id...",
+    "confirm_password": "Confirm password...",
+    "role": "Choose role...",
+    "mixer": "Choose mixer...",
+    "cf": "Choose cutting fluid...",
+    "model": "Choose model...",
+    "status": "Choose active status...",
+    "parameter": "Choose parameter...",
+    "packets": "Choose packet...",
+    "machine": "Choose machine...",
+    "title": "Enter title...",
+    "description": "Enter description...",
+    "recommendation": "Enter recommendation...",
+    "level": "Enter level...",
+    "media": "Choose media files...",
+    "measurement": "Enter Measurement...",
+    "machine_model": "Choose machine model...",
+    "type": "Choose type...",
+    "brand": "Choose brand...",
+    "parent": "Choose parent model...",
+    "comment": "Enter comment...",
+    "alert": "Enter searching alert...",
+    "old_pwd": "Enter password...",
+    "new_pwd": "Enter new password...",
+    "confirm_new_pwd": "Enter new password..."
+  },
+  "labels": {
+    "name": "Name",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "notification_level": "Level of Notification",
+    "phone_number": "Phone Number",
+    "username": "Username",
+    "password": "Password",
+    "email": "Email",
+    "confirm_password": "Confirm password",
+    "role": "Role",
+    "photo": "Photo",
+    "mixer": "Mixer",
+    "cf": "Cutting fluid",
+    "model": "Model",
+    "machine": "Machine",
+    "status": "Active status",
+    "parameter": "Parameter",
+    "customer_id": "Customer ID",
+    "title": "Title",
+    "description": "Description",
+    "recommendation": "Recommendation",
+    "recommendation_done": "Mark this recommendation as 'Done'",
+    "level": "Level",
+    "media": "Media Files",
+    "machine_model": "Machine Model",
+    "type": "Type",
+    "brand": "Brand",
+    "parent": "Parent Model",
+    "comment": "Comment",
+    "old_pwd": "Password",
+    "new_pwd": "New Password",
+    "confirm_new_pwd": "Confirm New Password"
+  },
+  "messages": {
+    "error": { "photo": "", "image_only": "You can only upload image files!" },
+    "success": {
+      "user": {
+        "created": "User created successfuly",
+        "updated": "User info updated successfuly!",
+        "deleted": "User deleted successfuly!"
+      },
+      "packet": {
+        "created": "Packet created successfuly!",
+        "updated": "Packet edited successfuly!",
+        "deleted": "Packet deleted successfuly!"
+      }
+    },
+    "confirm": {
+      "deletion": {
+        "user": {
+          "title": "Confirm the deletion",
+          "content": "Are you sure you want to delete a user?\nAll the information you have entered will be deleted",
+          "ok_text": "Delete User",
+          "cancel_text": "Cancel"
+        },
+        "packet": {
+          "title": "Confirm the deletion",
+          "content": "Are you sure you want to delete a packet?\nAll the information you have entered will be deleted",
+          "ok_text": "Delete Packet",
+          "cancel_text": "Cancel"
+        },
+        "machine_alert": {
+          "title": "Confirm the deletion",
+          "content": "Are you sure you want to delete the alert?\nAll the information you have entered will be deleted",
+          "ok_text": "Delete",
+          "cancel_text": "Cancel"
+        },
+        "parameter": {
+          "title": "Confirm the deletion",
+          "content": "Are you sure you want to delete this parameter?.\nAll the information you have entered will be deleted",
+          "ok_text": "Delete",
+          "cancel_text": "Cancel"
+        }
+      }
+    },
+    "info": {
+      "packet": {
+        "no_measurements": "There is no measurements to display"
+      }
+    }
+  },
+  "modals": {
+    "machine_alerts": { "title": "Choose the Machine" },
+    "machine_types": {
+      "add": { "title": "Add Type" },
+      "edit": { "title": "Edit Type" }
+    },
+    "brands": {
+      "add": { "title": "Add Brand" },
+      "edit": { "title": "Edit Brand" }
+    },
+    "profile_settings": {
+      "title": "Change Password"
+    }
+  },
+  "hints": {
+    "users": {
+      "search": "You can search for users by name, email, phone number"
+    },
+    "packets": {
+      "search": "You can search for packet by machine model, id and alerts content"
+    },
+    "parameters": "You can search for parameter by identifier, name and unit",
+    "alerts": "You can search for packet by machine model, id and alerts content"
+  },
+  "no_data": { "title": "No Data" },
+  "fillers": { "awaiting_data": "###" }
+}
